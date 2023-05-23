@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Архив статей</title>
+		<link rel="stylesheet" href="{{STATIC_URL}}/static/css/article.css">
+	</head>
+<body class="archive_body">
+	<div class="header">
+		<div class="logo"><img src="/{{ STATIC_URL }}static/img/logo.png" /></div>
+		<ul>
+		{% if request.user.is_authenticated %}
+		<li class="hello">Приветствуем, {{ request.user.username }}!</li>
+		<li><a href="/article/new/">Создать статью</a></li>
+		<li><a href="/exit/">Выход из аккаунта</a></li>
+		{% else %}
+		<li><a href="/auth/">Авторизация</a></li>
+		<li><a href="/register/">Регистрация</a></li>
+		{% endif %}
+		</ul>
+	</div>
+	<div class="archive">
+		{% for post in posts %}
+		<div class="one-post">
+		<h2 class="post-title"><a href='/article/{{post.id}}'>{{ post.title }}</a></h2>
+		<div class="article-info">
+			<div class="article-author">{{ post.author.username }}</div>
+			<div class="article-created-date">{{ post.get_date }}</div>
+		</div>
+		<p class="article-text">{{ post.get_excerpt }}</p>
+		</div>
+		{% endfor %}
+	</div>
+</body>
+</html>
