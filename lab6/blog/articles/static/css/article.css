@@ -93,6 +93,12 @@ a {
 	top: 30px;
 }
 
+.article_body .header .menu {
+	position: relative;
+	text-align: right;
+	top: 35px;
+}
+
 .header ul {
   list-style: none; /*убираем маркеры списка*/
   margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
