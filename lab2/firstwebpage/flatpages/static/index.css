@@ -5,6 +5,8 @@ body {
 }
 table {
 	border-collapse: collapse;
+	border: 1px solid #399; /* Граница вокруг таблицы */
+	border-spacing: 7px 5px; /* Расстояние между границами */
 }
 p, h4 {
 	font-size: 20px; 
@@ -18,6 +20,8 @@ ul, ol {
 }
 table tr td {
 	padding: 5px;
+	border: 1px solid #333; /* Граница вокруг ячеек */
+	padding: 5px; /* Поля в ячейках */ 
 }
 table {
 	width: 100%;
@@ -26,4 +30,8 @@ table {
 img {
 	height: 30px;
 	width: auto;
+}
+
+h1 {
+	font-family: serif;
 }
