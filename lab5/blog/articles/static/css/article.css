@@ -1,0 +1,95 @@
+body {
+	background: #1abc9c; 
+	font-family: Tahoma, Arial, sans-serif; 
+	color: #333;
+}
+table {
+	border-collapse: collapse;
+	border: 1px solid #399; /* Граница вокруг таблицы */
+	border-spacing: 7px 5px; /* Расстояние между границами */
+}
+p, h4 {
+	font-size: 20px; 
+	margin-bottom: 0;
+}
+h4 {
+	font-size: 14px; 
+}
+ul, ol {
+	margin: 0;
+}
+table tr td {
+	padding: 5px;
+	border: 1px solid #333; /* Граница вокруг ячеек */
+	padding: 5px; /* Поля в ячейках */ 
+}
+table {
+	width: 100%;
+}
+
+.archive_body .header img {
+	display: block; 
+	height: 100px;
+	width: auto; 
+	margin-left: auto; 
+	margin-right: auto;
+}
+.article_body .header {
+	height: 100px;
+}
+.article_body .header .logo {
+	width: 50%;
+	float: left;
+}
+.article_body .header img {
+	display: block; 
+	height: 100px;
+	width: auto; 
+	margin-left: 0; 
+	margin-right: auto;
+}
+
+.archive_body, .article_body {
+	width: 960px; 
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	font-family: serif;
+}
+
+p, h1, h2, h3, h4 {
+	color: #eee;
+}
+a {
+	color: #eee;
+}
+
+.post-title, .article-info, .article-text {
+	color: #eee;
+}
+
+.article-info .article-author {
+	font-weight: 900;
+	width: 50%; 
+	float: left;
+}
+.article-info .article-created-date {
+	/* float:right; */
+	font-style: italic;
+	text-align: right;
+}
+.article-info {
+	width: 100%;
+}
+.article-text {
+	font-size: 14px;
+}
+
+.home {
+	position: relative;
+	text-align: right;
+	top: 30px;
+}
+
